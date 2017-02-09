@@ -1,0 +1,18 @@
+server:
+  port: ${PORT:8181}
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    server:
+      waitTimeInMsWhenSyncEmpty: 0
+
+spring.h2.console.enabled : true
+
+logging.level.org.hibernate.SQL: debug
+
+spring.datasource.url : jdbc:postgresql://localhost:5432/SList
+spring.jpa.database-platform : org.hibernate.dialect.PostgreSQLDialect
+spring.datasource.username : postgres
+spring.datasource.password : sumi123
