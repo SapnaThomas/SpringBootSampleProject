@@ -27,14 +27,7 @@ public class Start {
 	WebSocketClient webSocketClient;
 	public static void main(String[] args) throws Exception {
 		SpringApplication.run(Start.class, args);
-/*        String uri = "ws://localhost:8181/websocket";
-        System.out.println("Connecting to " + uri);
-        WebSocketContainer container = ContainerProvider.getWebSocketContainer();
-        try {
-        container.connectToServer(WebSocketClient.class, URI.create(uri));
-        } catch (DeploymentException | IOException e) {
-            e.printStackTrace();
-        }*/
+
 
 	}
 
