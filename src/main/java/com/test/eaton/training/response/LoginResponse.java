@@ -4,6 +4,7 @@ public class LoginResponse {
 
 	private Long loginId;
 	private String role;
+	private String userName;
 
 	public Long getLoginId() {
 		return loginId;
@@ -22,4 +23,13 @@ public class LoginResponse {
 		this.role = role;
 	}
 
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	
 }
