@@ -1,0 +1,28 @@
+-- Table : "USERS"
+
+
+  CREATE TABLE USERS (
+    id              int primary key, --  auto increment primary key 
+    user_name       VARCHAR(40) unique,
+    password        VARCHAR(40),          
+    role            VARCHAR(40),        
+    created_time    TIMESTAMP  with time zone DEFAULT NOW(),
+    updated_time    TIMESTAMP  with time zone DEFAULT NOW()
+);
+
+CREATE TABLE STUDENTS  (
+    id              int primary key, --  auto increment primary key 
+    student_name    VARCHAR(40),
+    gender          VARCHAR(40),          
+    class           VARCHAR(40),        
+    created_time    TIMESTAMP  with time zone DEFAULT NOW(),
+    updated_time    TIMESTAMP  with time zone DEFAULT NOW()
+);
+
+
+CREATE TABLE ATTENDANCE   (
+    id              int primary key, --  auto increment primary key 
+    roll_no         int REFERENCES STUDENTS(id),       
+    status           VARCHAR(40),        
+    date            TIMESTAMP  with time zone DEFAULT NOW()
+    );
